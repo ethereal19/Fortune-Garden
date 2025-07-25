@@ -1,0 +1,75 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to bottom, #c2f0f7, #a1e6c3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.garden {
+  text-align: center;
+  padding: 20px;
+}
+
+h1 {
+  margin-bottom: 20px;
+  color: #2f5740;
+}
+
+.input-area {
+  margin-top: 20px;
+}
+
+input {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #888;
+  width: 200px;
+}
+
+button {
+  padding: 10px 15px;
+  margin-left: 10px;
+  border: none;
+  background-color: #6ab04c;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.tree {
+  position: relative;
+  margin: 0 auto;
+  background: url('https://i.imgur.com/egreXwZ.png') no-repeat center/contain;
+  width: 300px;
+  height: 400px;
+}
+
+.wish-orb {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  background-color: #fffd82;
+  border-radius: 50%;
+  animation: float 6s infinite ease-in-out;
+  box-shadow: 0 0 15px rgba(255, 255, 150, 0.7);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  color: #333;
+  text-align: center;
+  padding: 5px;
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
